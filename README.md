@@ -5,7 +5,7 @@ DXC Technologies grommet theme
 ## Installation
 
 ```
-  $ yarn install grommet-theme-dxc
+  $ yarn add grommet-theme-dxc
 ```
 
 ## Usage
