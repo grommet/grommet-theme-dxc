@@ -16,7 +16,10 @@ export const dxc = deepFreeze({
     colors: {
       background: '#ffffff',
       brand: '#222222',
-      control: '#000000',
+      control: {
+        dark: '#FFED00',
+        light: '#000000',
+      },
       focus: '#FFED00',
       'neutral-1': '#00C9FF',
       'neutral-2': '#64FF00',
@@ -43,7 +46,10 @@ export const dxc = deepFreeze({
     },
   },
   anchor: {
-    color: '#000000',
+    color: {
+      dark: '#FFED00',
+      light: '#000000',
+    },
   },
   button: {
     extend: css`
