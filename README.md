@@ -16,3 +16,7 @@ import { dxc } from 'grommet-theme-dxc';
 
 <Grommet theme={dxc} />
 ```
+
+## Sample
+
+![Sample](./sample.png)
