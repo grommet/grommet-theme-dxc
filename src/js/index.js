@@ -1,12 +1,12 @@
 // (C) Copyright 2017-2018 Hewlett Packard Enterprise Development LP
 import { css } from 'styled-components';
 
-const isObject = item => (
+const isObject = (item) => (
   item && typeof item === 'object' && !Array.isArray(item));
 
 const deepFreeze = (obj) => {
   Object.keys(obj).forEach(
-    key => key && isObject(obj[key]) && Object.freeze(obj[key]),
+    (key) => key && isObject(obj[key]) && Object.freeze(obj[key]),
   );
   return Object.freeze(obj);
 };
@@ -53,7 +53,7 @@ export const dxc = deepFreeze({
   },
   button: {
     extend: css`
-      ${props => !props.plain && `
+      ${(props) => !props.plain && `
         font-weight: bold;
         border-radius: 0;
       `}
